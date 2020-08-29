@@ -49,7 +49,7 @@ python upload.py -c cookie路径 -f 上报信息的文件路径
 
 ## 新添加内容
 
-将脚本放置于服务器，配置相关环境并设置crontab任务上传cookie文件，即可实现自动上传效果：
+将脚本放置于服务器，配置相关环境并设置crontab任务**上传自己的cookie文件**，即可实现自动上传效果：
 
 ```
 crontab -e
@@ -57,7 +57,6 @@ crontab -e
 * */4 * * *  python upload.py地址 -c cookie文件地址 -f upload.txt地址 >> 相应log文件地址 
 
 可以根据需要更改定时时间即可
-
 
 ```
 
